@@ -1,0 +1,10 @@
+version: '3'
+services:
+    template-jupyterlab-leafmap:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: template-jupyterlab-leafmap
+        restart: unless-stopped
+        ports:
+          - 80:8888
