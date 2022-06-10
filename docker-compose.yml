@@ -4,7 +4,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        image: template-jupyterlab-leafmap
+        image: tithiwat/template-jupyterlab-leafmap
         restart: unless-stopped
         ports:
           - 80:8888
